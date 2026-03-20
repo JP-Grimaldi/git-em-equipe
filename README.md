@@ -1,26 +1,39 @@
-Projeto: Sistema de Tarefas
-Integrantes:
-- J.P Grimaldi (Líder)
+# Sistema de Tarefas
+
+## Integrantes
+- J.P Grimaldi (Líder / GitHub Principal)
 - J.P Martins (Back-end, Insomnia e Git Auxiliar)
 - Inácio (SQL e Git Auxiliar)
 - Artur (Front-End)
 
-Descrição do sistema:
+## Descrição do sistema
+Sistema de tarefas simples que permite criar, listar, editar e deletar tarefas.
 
-- É um sistema de tarefas simples que permite criar, listar, editar e deletar tarefas
+## Funcionalidades
+- Criar tarefas
+- Listar tarefas
+- Editar tarefas
+- Deletar tarefas
 
-Funcionalidades:
+## Tecnologias utilizadas
+- JavaScript
+- TypeScript
+- Electron
+- HTML
+- CSS
+- MySQL
+- Insomnia
 
-- Ele permite criar, listar, editar e deletar tarefas
+## Estrutura do projeto
+- `frontend/` -> interface
+- `backend/` -> API Express + MySQL
+- `main.js` -> processo principal do Electron
+- `preload.js` -> ponte segura para o front-end
+- `banco.sql` -> script do banco
 
-Tecnologias utilizadas:
-
-- JS, TS, Electron, HTML, CSS, Insomnia e GPT para auxílio de desenvolvimento
-
-- Separação de Tarefas:
-- J.P Grimaldi (GitHub Principal)
-- J.P Martins (Back-end, Insomnia e Git Auxiliar)
-- Inácio (SQL e Git Auxiliar)
-- Artur (Front-End)
-
-Conflitos: Não tinha main, resolvemos através da criação de uma branch main e, após dar os devidos merges, juntar com essa main e entregar tudo.
+## Como rodar
+1. Rode o arquivo `banco.sql` no MySQL.
+2. Ajuste usuário e senha em `backend/src/Config/knex.ts` e `backend/dist/Config/knex.js`.
+3. Instale as dependências:
+   ```bash
+   npm install
