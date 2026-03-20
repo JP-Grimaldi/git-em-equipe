@@ -1,10 +1,34 @@
-# Projeto integrado com Electron
+# Sistema de Tarefas
 
-## Estrutura
+## Integrantes
+- J.P Grimaldi (Líder / GitHub Principal)
+- J.P Martins (Back-end, Insomnia e Git Auxiliar)
+- Inácio (SQL e Git Auxiliar)
+- Artur (Front-End)
+
+## Descrição do sistema
+Sistema de tarefas simples que permite criar, listar, editar e deletar tarefas.
+
+## Funcionalidades
+- Criar tarefas
+- Listar tarefas
+- Editar tarefas
+- Deletar tarefas
+
+## Tecnologias utilizadas
+- JavaScript
+- TypeScript
+- Electron
+- HTML
+- CSS
+- MySQL
+- Insomnia
+
+## Estrutura do projeto
 - `frontend/` -> interface
 - `backend/` -> API Express + MySQL
 - `main.js` -> processo principal do Electron
-- `preload.js` -> ponte segura para o front
+- `preload.js` -> ponte segura para o front-end
 - `banco.sql` -> script do banco
 
 ## Como rodar
@@ -13,11 +37,3 @@
 3. Instale as dependências:
    ```bash
    npm install
-   ```
-4. Inicie:
-   ```bash
-   npm start
-   ```
-
-## Observação
-O Electron abre o front-end e sobe o back-end automaticamente.
