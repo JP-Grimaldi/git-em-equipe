@@ -1,4 +1,25 @@
 {
+<<<<<<< HEAD
+  "name": "git-em-equipe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1",
+    "knex": "^3.1.0",
+    "mysql2": "^3.20.0",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0"
+=======
   "name": "electron-tarefas-integrado",
   "version": "1.0.0",
   "description": "Front-end com Electron integrado ao back-end Express + MySQL",
@@ -18,5 +39,6 @@
     "@types/express": "^5.0.6",
     "@types/node": "^25.5.0",
     "typescript": "^5.9.3"
+>>>>>>> develop
   }
 }
