@@ -1,0 +1,10 @@
+"use strict";
+const express = require('express');
+const { getTarefa, createTarefa, updateTarefa, deleteTarefa } = require('../Controller/tarefaController');
+const router = express.Router();
+router.get('/', getTarefa);
+router.post('/', createTarefa);
+router.put('/:id', updateTarefa);
+router.delete('/:id', deleteTarefa);
+module.exports = router;
+module.exports.default = router;

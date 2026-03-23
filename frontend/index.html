@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Tarefas</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="topo">
+    <div>
+      <p class="tag">Projeto em grupo</p>
+      <h1>Sistema de Tarefas com Git</h1>
+      <p class="subtitulo">Front-end separado do back-end e integrado com API REST + MySQL.</p>
+    </div>
+    <button id="btnAtualizar" class="btn btn-secundario">Atualizar lista</button>
+  </header>
+
+  <main class="container">
+    <section class="card formulario-card">
+      <h2 id="formTitulo">Cadastrar tarefa</h2>
+      <form id="taskForm">
+        <input type="hidden" id="taskId" />
+
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" placeholder="Ex.: Criar tela de dashboard" required />
+
+        <label for="descricao">Descrição</label>
+        <textarea id="descricao" rows="4" placeholder="Descreva a tarefa" required></textarea>
+
+        <div class="grid-2">
+          <div>
+            <label for="responsavel">Responsável</label>
+            <input type="text" id="responsavel" placeholder="Nome do integrante" />
+          </div>
+          <div>
+            <label for="prioridade">Prioridade</label>
+            <select id="prioridade">
+              <option value="baixa">Baixa</option>
+              <option value="media" selected>Média</option>
+              <option value="alta">Alta</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="status">Status</label>
+        <select id="status">
+          <option value="pendente" selected>Pendente</option>
+          <option value="entregue">Entregue</option>
+          <option value="atrasado">Atrasado</option>
+        </select>
+
+        <div class="acoes-form">
+          <button type="submit" class="btn">Salvar tarefa</button>
+          <button type="button" id="btnCancelar" class="btn btn-secundario oculto">Cancelar edição</button>
+        </div>
+      </form>
+      <p class="ajuda-form">Responsável e prioridade ficam só na interface. O back-end atual salva título, descrição e status.</p>
+      <p id="mensagem" class="mensagem"></p>
+    </section>
+
+    <section class="card lista-card">
+      <div class="lista-header">
+        <h2>Lista de tarefas</h2>
+        <span id="contador" class="contador">0 tarefas</span>
+      </div>
+      <div id="listaTarefas" class="lista-tarefas"></div>
+    </section>
+  </main>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
